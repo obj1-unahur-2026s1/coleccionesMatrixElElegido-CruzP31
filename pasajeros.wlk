@@ -1,3 +1,5 @@
+import nave.*
+
 object neo {
   var energia =  100
   method esElElegido() {
@@ -9,6 +11,12 @@ object neo {
   method vitalidad() {
     return energia / 10
   }
+  method subirALaNave() {
+    nave.subirALaNave(self)
+  }
+  method bajarseDeLaNave() {
+    nave.bajarseDeLaNave(self)
+  }
 }
 object trinity {
   method vitalidad() {
@@ -18,6 +26,12 @@ object trinity {
     return false
   }
   method saltar() {}
+  method subirALaNave() {
+    nave.subirALaNave(self)
+  }
+  method bajarseDeLaNave() {
+    nave.bajarseDeLaNave(self)
+  }
 }
 
 object morfeo {
@@ -32,6 +46,12 @@ object morfeo {
   }
   method vitalidad() {
     return vitalidad
+  }
+  method subirALaNave() {
+    nave.subirALaNave(self)
+  }
+  method bajarseDeLaNave() {
+    nave.bajarseDeLaNave(self)
   }
 
 }
