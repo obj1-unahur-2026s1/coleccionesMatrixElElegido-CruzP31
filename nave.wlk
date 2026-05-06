@@ -57,4 +57,10 @@ object nave {
   method ordenarDeMenorVitalidadAMayor() {
     pasajeros.sortBy({p1,p2 => p1.vitalidad() < p2.vitalidad() })
   }
+  method cualquierPasajero() {
+    return pasajeros.anyOne()
+  }
+  method vitalidadesOrdenadas() {
+    return self.vitalidadesDePasajeros().sortBy({v1,v2 => v1 < v2 })
+  }
 }
