@@ -63,4 +63,7 @@ object nave {
   method vitalidadesOrdenadas() {
     return self.vitalidadesDePasajeros().sortBy({v1,v2 => v1 < v2 })
   }
+  method cantidadDeElegidosEnLaNave() {
+    return pasajeros.count({p=> p.esElElegido()})
+  }
 }
